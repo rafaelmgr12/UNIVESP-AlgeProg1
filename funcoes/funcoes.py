@@ -16,6 +16,8 @@ Os exercícios são tirados do livro : Introduçao a Computacão com Python  PER
 #3.1
 
 def temp_C(t):
+    c = input("Digite a temperatura atual em graus Fahrenheit:\n") 
+    t = float(c)
     celsius = (5/9)*(t-32)
     return celsius
 
@@ -30,7 +32,7 @@ def perimeter(r):
     if r<0:
         print("ERRO!\nNão existe raio negativo")
         return None
-    else 
+    else:
         per = 2*math.pi*r
         return per
 
@@ -61,7 +63,7 @@ def invert_list(l):
 
 def trocarPU(l):
     if len(a) == 0:
-        print('Lista Vazia!')
+        print('Lista Vazia!\n')
         return None
     # Eu fiz dois jeitos de fazer isso, será que tem mais?
     #if a == []:
