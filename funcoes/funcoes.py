@@ -61,12 +61,12 @@ def invert_list(l):
 
 #3.14
 
-def trocarPU(l):
-    if len(a) == 0:
+def trocaPU(l):
+    if len(l) == 0:
         print('Lista Vazia!\n')
         return None
     # Eu fiz dois jeitos de fazer isso, será que tem mais?
-    #if a == []:
+    #if l == []:
         #print('Lista Vazia!')
         #return None
     aux_1 = l[-1]
