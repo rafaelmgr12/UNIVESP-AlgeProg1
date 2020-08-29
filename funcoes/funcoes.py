@@ -89,7 +89,7 @@ def problema_3_2():
     
     jogadores = ['Musial', 'Aaraon', 'Williams', 'Gehrig', 'Ruth']
     nome = input("Digite um nome")
-    if nome in jogadores: ()
+    if nome in jogadores:
         print("Um dos 5 maiores jogadores de beisebol de todos os tempos!")
     
     golpes = eval(input("O valor do golpe"))
