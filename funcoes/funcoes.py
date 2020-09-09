@@ -144,6 +144,36 @@ def meuIMC(peso, altura):
   else:                       # pode ser elif imc >= 25
     print('Sobrepeso\n')
 
+############################################Exercício da Semana 6 #############################################################################
+####################################################################################################################################################
+
+### Olhar o Notebook da semana 6 #################
+
+
+def problema_3_5():
+    listaPalavras = eval(input("Digite a lista de palavras:"))
+    for i in listaPalavras:
+        if len(i) == 4 :
+            print(i)
+
+def problema_3_6():
+   #a)
+    for i in range(0,10):
+        print('\n',i)
+    #b)
+    for i in range(2):
+        print(i)
+
+def problema_3_7():
+    #a)
+    for i in range(3,13):
+        print("\n",i)
+    for i in range(0,10,2):
+        print("\n",i)
+    for i in range(0,24,3):
+        print("\n",i)
+    for i in range(3,12,5):
+        print("\n",i)
 
 
 
