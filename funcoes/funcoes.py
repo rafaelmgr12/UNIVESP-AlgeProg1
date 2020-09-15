@@ -1,16 +1,18 @@
 import numpy as np
 import math 
 
+#############################################################################################################
+# Esse código foi feito Por Rafael Ribeiro, Facilitador da disciplina Algoritmos e Programação de 
+# Computadores I
+#
+#
+# Aqui terá esritas funções que, serão usadas durante os exercícios durante a semana.
+#
+# Os exercícios são tirados do livro : Introduçao a Computacão com Python  PERKOVIC, Ljubomir
+#############################################################################################################
 
-'''
-Esse código foi feito Por Rafael Ribeiro, Facilitador da disciplina Algoritmos e Programação de Computadores I
-
-Aqui terá esritas funções que, serão usadas durante os exercícios durante a semana.
-
-Os exercícios são tirados do livro : Introduçao a Computacão com Python  PERKOVIC, Ljubomir
-'''
-
-############################################Exercício do cap 3 do livro#############################################################################
+#########################################################################################################################
+# Exercício do cap 3 do livro
 ####################################################################################################################################################
 
 #3.1
@@ -175,5 +177,49 @@ def problema_3_7():
     for i in range(3,12,5):
         print("\n",i)
 
+###################################################################
+# Semana 7 - Olhar o notebook Semana_7.ipynb
+###################################################################
 
+# Exercio da aula
+
+def transposta(l):
+    tam = len(l)
+    for i in range(tam):
+        for j in range(tam):
+            l[i][j] =l[j][i]
+
+    return l
+
+def problema_4_1():
+    s = '0123456789'
+    print('a)\n\n',s[2:5])
+    print('b)\n\n',s[7:9])
+    print('c)\n\n', s[1:8])
+    print('d)\n\n',s[:4])
+    print('e)\n\n',s[7:])
+    print('f)\n\n', s[-3:1])
+
+def problema_4_2():
+    forecast = 'It will be a sunny day today'
+    cont = forecast.count('day')
+    print ('a)\n\n',cont)
+    clima = forecast.find('sunny')
+    print ('b)\n\n',clima)
+    troca = forecast.replace('sunny', 'cloudy')
+    print ('c)\n\n',troca)
+
+# Problema Prático 5_9
+def soma2D(t1,t2):
+    '''
+    t1 e t2 são listas 2D com o mesmo número de linhas e mesmo número de colunas de 
+    tamanho igual add2D incrementa cada item t1[i][j[ por t2[i][j]
+    ''' 
+    nlinhas = len(t1) # número de linhas 
+    ncolunas = len(t1[0]) # número de colunas 
+    for i in range(nlinhas): # para cada índice de linha i 
+        for j in range(ncolunas): # para cada índice de coluna j 
+            
+            t1[i][j] += t2[i][j]
+    return t1
 
