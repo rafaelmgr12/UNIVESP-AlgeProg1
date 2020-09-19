@@ -184,12 +184,12 @@ def problema_3_7():
 # Exercio da aula
 
 def transposta(l):
-    tam = len(l)
-    for i in range(tam):
-        for j in range(tam):
-            l[i][j] =l[j][i]
-
-    return l
+  tam = len(l)
+  lt = [[0,0],[0,0]]
+  for i in range(tam):
+    for j in range(tam):
+      lt[i][j] =l[j][i]
+  return lt
 
 def problema_4_1():
     s = '0123456789'
